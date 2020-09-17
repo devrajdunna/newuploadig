@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Crkpdata</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Adhar</th>
+      <th>Mobile</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @crkpdata.each do |crkpdatum| %>
+      <tr>
+        <td><%= crkpdatum.name %></td>
+        <td><%= crkpdatum.adhar %></td>
+        <td><%= crkpdatum.mobile %></td>
+        <td><%= link_to 'Show', crkpdatum %></td>
+        <td><%= link_to 'Edit', edit_crkpdatum_path(crkpdatum) %></td>
+        <td><%= link_to 'Destroy', crkpdatum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Crkpdatum', new_crkpdatum_path %>

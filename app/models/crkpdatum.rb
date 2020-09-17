@@ -1,0 +1,2 @@
+class Crkpdatum < ApplicationRecord
+end
