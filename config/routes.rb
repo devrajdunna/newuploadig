@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :crkpuramdata
+  resources :crkpdata
+  resources :crkpurams
   root to: "photos#index"
   resources :photos
   # The priority is based upon order of creation: first created -> highest priority.

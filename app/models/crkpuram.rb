@@ -1,0 +1,2 @@
+class Crkpuram < ApplicationRecord
+end
