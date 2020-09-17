@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :crkpuramdata
   resources :crkpdata
   resources :crkpurams
   root to: "photos#index"

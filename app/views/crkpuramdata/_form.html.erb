@@ -1,0 +1,52 @@
+<%= form_for(crkpuramdatum) do |f| %>
+  <% if crkpuramdatum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(crkpuramdatum.errors.count, "error") %> prohibited this crkpuramdatum from being saved:</h2>
+
+      <ul>
+      <% crkpuramdatum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :full_name %>
+    <%= f.text_field :full_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :care_of %>
+    <%= f.text_field :care_of %>
+  </div>
+
+  <div class="field">
+    <%= f.label :adhar %>
+    <%= f.text_field :adhar %>
+  </div>
+
+  <div class="field">
+    <%= f.label :mobile %>
+    <%= f.text_field :mobile %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bank_name %>
+    <%= f.text_field :bank_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ifsccode %>
+    <%= f.text_field :ifsccode %>
+  </div>
+
+  <div class="field">
+    <%= f.label :account_number %>
+    <%= f.text_field :account_number %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

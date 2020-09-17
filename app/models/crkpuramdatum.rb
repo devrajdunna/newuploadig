@@ -1,0 +1,2 @@
+class Crkpuramdatum < ApplicationRecord
+end
